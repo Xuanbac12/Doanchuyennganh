@@ -16,8 +16,8 @@ import java.util.function.Function;
 
 @Component
 public class JwtUtil {
-    @Value("${jwt.secret}")
-    private String SECRET_KEY_BASE64;
+
+    private final String SECRET_KEY_BASE64 = "94Hj79Y13oI0fyiBI0JDUA==";
 
     // Convert Base64 encoded string to byte[]
     private byte[] SECRET_KEY = Base64.getDecoder().decode(SECRET_KEY_BASE64);
